@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/google-code-prettify.css">
+	<!-- Google Code Prettify -->
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 	<!-- js -->
 	<script src="common/js/jquery.js"></script>
 	<script src="./common/js/main.js"></script>
@@ -20,6 +23,27 @@
 	<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
 </head>
 <body>
+	<section>
+		<h2>IE hack</h2>
+
+		<div>
+			<code class="prettyprint lang-css">
+				@media screen\0 {
+					.fu_k-IE {
+						font-size: 4.5vw;
+					}
+				}
+			</code>
+		</div>
+		<div>
+			<code class="prettyprint lang-css">
+				.fu_k-IE {
+					font-size: 4.5vw\0;
+				}
+			</code>
+		</div>
+
+	</section>
 	<section>
 		<h2>Picturefill.js</h2>
 		<picture>
